@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;500;600&display=swap');
 
 * {
     margin:0;
@@ -7,21 +7,22 @@
 }
 
 body{
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Montserrat', sans-serif;
     overflow-x: hidden;
 }
 
 .wrapper{
     width: 100vw;
-    height: 100vh;
-    background-color: #191c32;
-    color:white
+    height: 150vh;
+    background-color: #ffffff;
+    color:rgb(18, 40, 243)
 }
 
 .navbar{
     display: flex;
     justify-content: space-between;
     padding: 2em;
+    padding-right: 8em;
 }
 
 .brand{
@@ -35,7 +36,7 @@ body{
 
 .menu{
     display: flex;
-    width: 50%;
+    width: 60%;
     justify-content: space-around;
 }
 
@@ -44,17 +45,20 @@ body{
 }
 
 .menu a{
-    color:white;
+    color: gray;
     text-decoration: none;
-    padding:10px 20px;
+    padding:12px 20px;
 }
 
 .menu .active{
-    color:aqua
+    color:rgb(255, 255, 255);
+    background-color: rgb(18, 40, 243);
+    border-radius: 5px;
 }
 
 .menu a:hover{
-    background-color: aqua;
+    background-color:blue;
     color:#191c32;
     transition:ease-in .5s;
+    border-radius: 5px;
 }
