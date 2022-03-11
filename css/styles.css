@@ -13,26 +13,26 @@ body{
 
 .wrapper{
     width: 100vw;
-    height: 150vh;
+    height: 100vh;
     background-color: #ffffff;
     color:rgb(18, 40, 243)
 }
 
 .navbar{
     display: flex;
+    position:fixed;
     justify-content: space-between;
     padding: 2em;
-    padding-right: 8em;
+    padding-left: 4em;
+    z-index: 2;
+    background-color: #ffffff;
+    width: 100%;
 }
 
 .brand{
     margin-top: -7px;
 }
 
-.brand span{
-    color:aqua
-
-}
 
 .menu{
     display: flex;
@@ -54,11 +54,137 @@ body{
     color:rgb(255, 255, 255);
     background-color: rgb(18, 40, 243);
     border-radius: 5px;
+    box-shadow: 1px 3px 11px -5px rgba(0, 0, 0, 0.5)
 }
 
 .menu a:hover{
     background-color:blue;
-    color:#191c32;
+    color:#ffffff;
     transition:ease-in .5s;
     border-radius: 5px;
 }
+
+.main{
+    margin: 0 auto;
+    width: 90vw;
+    height: 80vh;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    align-items: center;
+}
+
+h1{
+    font-size: 3em;
+    font-weight: 900;
+    color:#1f3f6f;
+}
+
+.info-content{
+    padding-left:1em;
+}
+
+.info-content ul{
+    display: flex;
+    width: 60%;
+    justify-content: space-around;
+    font-size: 85%;
+}
+
+.info-content li{
+    list-style: none;
+}
+
+.info-content p{
+    text-align: justify;
+    line-height: 2em;
+    padding-top: 1em;
+    padding-bottom: 1em;
+    padding-right: 14em;
+    color: gray;
+}
+
+.info-content i{
+    color:yellow;
+}
+
+.image{
+    z-index: 0;
+}
+
+.image img{
+    width: 175%;
+    background-color: #0f90e4;
+}
+
+.schedule{
+    position: absolute;
+    top: 70%;
+    left: 17.5%;
+    transform: translate(-60%, 500%);   
+}
+
+.schedule-submit{
+    position: absolute;
+    background-color: rgba(255, 255, 255, 0.8); 
+    width: 65%;
+    height:13%;
+    top: 90%;
+    left:10%;
+    border-radius: 4px;
+    box-shadow: 7px 5px 10px -5px rgb(180, 180, 180);
+    justify-content: center;
+}
+
+.schedule-submit ul{
+    line-height: 1.8em;
+    display: flex;
+    width: 100%;
+    margin-top: 2%;
+    justify-content:space-around;
+}
+
+.schedule-submit li{
+    list-style: none;
+}
+
+.submit{
+    padding: 15px 35px;
+    background-color:rgb(18, 40, 243);
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    margin-top: 0px;
+    font-weight: 100;
+    font-size: 85%;
+    cursor: pointer;
+    box-shadow: 1px 3px 11px 5 px rgba(102, 231, 200, 0.5);
+}
+
+h3{
+    font-weight: 800;
+    font-size: 120%;
+}
+
+.vaccines{
+    opacity: 0.2;
+    padding-top: 0.5%;
+    filter: grayscale(1);
+}
+
+.vaccines ul{
+    display: flex;
+    width: 100%;
+    align-items: center;
+    margin-top: 2%;
+    justify-content:space-around;
+}
+
+.vaccines li{
+    list-style: none;
+}
+
+
+
+
+
+
