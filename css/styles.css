@@ -164,7 +164,7 @@ h1{
     border: none;
     border-radius: 5px;
     margin-top: 0px;
-    font-weight: 100;
+    font-weight: bold;
     font-size: 85%;
     cursor: pointer;
     box-shadow: 1px 3px 11px 5 px rgba(102, 231, 200, 0.5);
@@ -200,6 +200,7 @@ h3{
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
+    margin-bottom: 10%;
 }
 
 .explanation-headings{
@@ -280,17 +281,21 @@ h3{
     justify-content: center;
     align-items: center;
     max-height: fit-content;
+    margin-top: 20%;
 }
 
 .subconImagePreparations{
     width: 50%;
+    height: 25em;
     display: flex; 
+    background-color: #0f90e4;
+    transform: translate(0%,20%);
 }
 
 .subconImagePreparations img{
+    transform: translate(10%,-37.5%);
     max-width: 100%;
-    height: auto;
-    
+    height: 160%;
 }
 
 .subconPreparations{
@@ -302,10 +307,25 @@ h3{
     
 }
 
-.subconPreparations h2, .subconPreparations p{
+.subconPreparations h2{
     margin-left: 5%;
     margin-right: 10%;
     margin-top: 5%;
+    color:#1f3f6f;
+    font-size: 200%;
+}
+
+.subconPreparations p{
+    margin-left: 5%;
+    margin-right: 10%;
+    margin-top: 5%;
+    color:gray;
+    font-size: 90%;
+    line-height: 2em;
+}
+
+.subconPreparations i{
+    color: #2549C9;
 }
 
 .contPreparationsList{
@@ -314,6 +334,7 @@ h3{
     padding: 1% 5%;
 
 }
+
 
 .subconPreparationsList{
     height: 20%;
@@ -341,19 +362,33 @@ h3{
     justify-content: center;
     align-items: center;
     max-height: fit-content;
+    margin-top: 5%;
 }
 .subconEmergency{
     width: 50%;
 }
 
-.subconEmergency p, .subconEmergency h2{
+.subconEmergency p{
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-top: 5%;
+    color:gray;
+    font-size: 90%;
+    line-height: 2em;
+}
+
+.subconEmergency h2{
     margin-left: 10%;
     margin-top: 5%;
+    color:#1f3f6f;
+    font-size: 200%;
 }
+
 .subconContactInfo{
     height:fit-content;
-    width: fit-content;
+    width: none;
     margin-left: 10%;
+    margin-right: 8%;
 }
 
 .subconContactType {
@@ -361,7 +396,7 @@ h3{
     height: 45%;
     width: 45%;
     float: left;
-    padding: 3% 5%;
+    padding: 3% 2%;
     margin: 2%;
     border-color: #FAFAFF;
     border-style: solid;
@@ -370,13 +405,23 @@ h3{
 }
 
 .subconContactType i{
-    font-size: 3em;
+    font-size: 1.5em;
     margin-bottom: 10%;
+    margin-right: 10%;
     float: left;
+    color: #2549C9;
 }
 
 .subconContactType h3{
     float: left;
+    font-size: 120%;
+}
+
+.subconContactType p{
+    float:inline-start;
+    color:gray;
+    font-size: 70%;
+    line-height: 2em;
 }
 
 .subconContactType button {
@@ -385,7 +430,6 @@ h3{
     background-color: #EBF1FE;
     color: #2549C9;
     font-weight: bold;
-    font-stretch:semi-expanded;
     border-radius: 5px;
     cursor: pointer;
     letter-spacing: 0.5px;
@@ -405,13 +449,16 @@ h3{
 }
 
 .subconImageContact{
+    transform: translate(0%,30%);
     width: 50%;
+    height: 20em;
+    background-color: #2549C9;
 }
 .subconImageContact img{
-    max-width: 60%;
-    height: auto;
+    transform: translate(2%,-41%);
+    max-width: 100%;
+    height: 170%;
     object-fit:cover;
-    
 }
 
 /* Footer */
@@ -438,10 +485,31 @@ footer{
     width: 30%;
 }
 
+.footertext a{
+    font-size: 1.5em;
+    font-weight: 900;
+    color:#2549C9;
+    text-decoration: none;
+}
+
+.footertext p{
+    color:gray;
+    font-size: 100%;
+    line-height: 2em;
+    margin-top: 7%;
+}
+
 .footerTopRight {
     width: 50%;
     max-height: 80%;
     margin-top: 3%;
+}
+
+.footerTopRight a{
+    color:gray;
+    line-height: 2em;
+    font-size: 85%;
+    text-decoration: none;
 }
 
 .subconFooter {
@@ -453,7 +521,7 @@ footer{
 .subconFooter span{
     font-weight: bold;
     font-size: 1.2em;
-    
+    color: #1f3f6f;
 }
 
 .footerLinks{
@@ -468,6 +536,9 @@ footer{
 }
 .footerBottomLeft p {
     margin-left: 10%;
+    color:gray;
+    line-height: 2em;
+    font-size: 90%;
 }
 
 .footerBottomRight {
@@ -479,12 +550,27 @@ footer{
 }
 .footerBottomRight a {
     margin-left: 5%;
+    color:gray;
+    line-height: 2em;
+    font-size: 85%;
+    text-decoration: none;
 }
+
+
 
 .footertc{
     display: flex;
     justify-content: end;
     margin-right: 15%;
+}
+
+.credits{
+    margin-left: 5%;
+    text-align: left;
+}
+
+.credits a{
+    text-decoration: none;
 }
 
 
