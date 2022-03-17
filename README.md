@@ -1,1 +1,1 @@
-# CSSFrontendLaunchX
+# Vaccination page
